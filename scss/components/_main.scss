@@ -1,0 +1,140 @@
+/*?..........MAIN..........*/
+
+
+/*!.................Pagina Main INDEX..................*/
+.viajemosindex {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+    height: calc(100vh - 200px);
+    text-align: center;
+    background-image: url(../img/arg-mapa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: nth($colores, 3);
+    padding: 30px;
+
+    h2 {
+        @extend %enlaces;
+        font-size: 400%;
+        text-shadow: 3px 3px nth($colores, 4);
+    }
+
+    p {
+        @extend %enlaces;
+        font-size: 200%;
+        margin-bottom: 20px;
+        color: nth($colores, 2);
+    }
+
+    a {
+        padding: 10px;
+        font-size: 200%;
+        text-decoration: none;
+        color: nth($colores, 2);
+        border: 5px solid nth($colores, 6);
+        border-radius: 20px;
+        background-color: nth($colores, 1);
+
+        &:hover {
+            background-color: nth($colores, 5);
+        }
+    }
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+    border: 5px solid nth($colores, 6);
+}
+
+.paquetesindex {
+    
+    h2 {
+        @extend %enlaces;
+        text-align: center;
+        font-size: 70px;
+        padding: 10px;
+        color: nth($colores, 6);
+        text-shadow: 3px 3px nth($colores, 4);
+    }
+
+    div {
+        @include flexbox(flex, space-between, center, row);
+        
+        div {
+            width: 300px;
+            height: 350px;
+            border: 3px solid nth($colores, 6);
+            margin: 20px;
+            text-align: center;
+            display: inline-block;
+
+            img {
+                width: 100%;
+                height: 60%;
+                padding: 5px;
+                margin-bottom: 20px;
+            }
+
+            h3 {
+                @extend %enlaces;
+                font-size: 30px;
+                margin-bottom: 25px;
+            }
+
+            a {
+                font-size: 20px;
+                border: none;
+                background-color: nth($colores, 6);
+                text-decoration: none;
+                color: nth($colores, 3);
+                padding: 8px;
+
+                border-radius: 30px;
+                background: nth($colores, 1);
+                box-shadow: 0 0 5px  nth($colores, 1),
+                            0 0 25px nth($colores, 1);
+                transition: all 0.4s ease;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: nth($colores, 6);
+                    transform: scale(1.1);
+                    box-shadow: 0 0 5px nth($colores, 1),
+                                0 0 25px nth($colores, 1),
+                                0 0 50px nth($colores, 1),
+                                0 0 100px nth($colores, 1);
+
+                }
+            }
+        }
+    }
+}
+/*!.................Pagina Main QUIENES SOMOS..................*/
+.quienessomos{
+    margin: 10px;
+    @include flexbox(flex, space-around, center, row-reverse);
+    
+    div{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 10px;
+        h1{
+            @extend %enlaces;
+            font-size: 50px;
+            text-shadow: 2px 2px nth($colores, 1);
+        }
+        p{
+            @extend %enlaces;
+            font-size: 20px;
+        }
+
+    }
+    img{
+        border-radius: 8px;
+        box-shadow: 0 0 30px nth($colores, 4);
+    }
+}

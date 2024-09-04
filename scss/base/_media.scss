@@ -1,0 +1,67 @@
+/*?............MEDIAQUERY............*/
+/*!........Footer Mediaquery..............*/
+@media screen and (max-width:1005px) {
+
+    footer div div h4 {
+        font-size: 20px;
+        text-shadow: 1px 1px white;
+    }
+}
+
+@media screen and (max-width:865px) {
+    footer div h4 {
+        display: none;
+    }
+
+    footer div div a img {
+        display: inline-block;
+        margin-right: 20px;
+    }
+}
+/*!........Pagina Mediaquery INDEX..............*/
+@media screen and (max-width:720px) {
+    .paquetesindex h2 {
+        font-size: 30px;
+        text-shadow: 1px 1px skyblue;
+    }
+
+    .paquetesindex div {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:690px) {
+
+    .viajemosindex a {
+        display: none;
+    }
+
+    .viajemosindex p {
+        display: none;
+    }
+}
+
+@media screen and (max-width:457px) {
+    .whatsappindex {
+        left: 40px;
+        ;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .viajemosindex h2 {
+        font-size: 50px;
+    }
+}
+/*!........Pagina Mediaquery QUIENES SOMOS..............*/
+@media screen and (max-width:1070px) {
+    .quienessomos {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .quienessomos img {
+        width: 100%;
+        height: 100%;
+    }
+}

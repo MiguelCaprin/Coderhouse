@@ -62,16 +62,16 @@ header {
 .viajemosindex p {
     font-size: 200%;
     margin-bottom: 20px;
-    color: rgb(250, 248, 248);
+    color: white;
 }
 
 .viajemosindex a {
     padding: 10px;
     font-size: 200%;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: white;
     border-radius: 20px;
-    background-color: rgb(138, 138, 41);
+    background-color: skyblue;
 }
 
 .viajemosindex a:hover {
@@ -83,7 +83,14 @@ iframe {
     height: 500px;
     border: 5px solid blue;
 }
+.paquetesindex h2 {
+    text-align: center;
+    font-size: 70px;
+    padding: 10px;
+    color: blue;
+    text-shadow: 3px 3px black;
 
+}
 .paquetesindex div {
     display: flex;
     justify-content: space-between;
@@ -100,14 +107,6 @@ iframe {
 
 }
 
-.paquetesindex h2 {
-    text-align: center;
-    font-size: 70px;
-    padding: 10px;
-    color: blue;
-    text-shadow: 3px 3px black;
-
-}
 
 .paquetesindex div img {
     width: 100%;
@@ -181,12 +180,12 @@ footer .footerindex h4 {
     font-style: italic;
     margin-bottom: 20px;
     margin: 20px;
-    color: antiquewhite;
+    color: white;
     text-shadow: 3px 3px black;
 
 }
 
-footer .footer-a {
+.footerindex a {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -229,7 +228,7 @@ footer a img:hover {
 @media screen and (max-width:720px) {
     .paquetesindex h2 {
         font-size: 30px;
-        text-shadow: 1px 1px rgb(83, 182, 195);
+        text-shadow: 1px 1px skyblue;
     }
 
     .paquetesindex div {
@@ -534,8 +533,8 @@ footer a img:hover {
     margin: 10px;
     display: flex;
     justify-content: space-around;
+    align-items: center;  
     flex-direction: row-reverse;
-    align-items: center;
 }
 
 .quienessomos div {
@@ -556,16 +555,7 @@ footer a img:hover {
 }
 
 /**-------------------------------------FOOTER--------------------------------- */
-.footerQuien {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 20px;
-}
 
-.footerQuien div {
-    margin-right: 20px;
-}
 
 @media screen and (max-width:550px) {
     .quienessomos {

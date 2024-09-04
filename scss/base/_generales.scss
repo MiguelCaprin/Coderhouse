@@ -1,0 +1,92 @@
+/*?............GENERALES.............*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: "Lato", sans-serif;
+}
+/*!.......HEADER BOOTSTRAP.............*/
+header {
+    position: sticky;
+    top: 0;
+}
+
+.logoargentravel {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.nav-background {
+    background-color: nth($colores, 1);
+}
+
+.collapse .navbar-nav .nav-item .nav-link {
+    font-size: 30px;
+    color: white !important;
+    text-shadow: 1px 1px nth($colores, 4);
+}
+
+.dropdown-item {
+    font-size: 30px;
+    text-shadow: 1px 1px nth($colores, 1);
+}
+/*!............FOOTER.......................*/
+footer {
+    background-color: nth($colores, 1);
+    padding: 20px;
+
+    div {
+        @include flexbox(flex, space-around, center, row);
+        div {
+            h4 {
+                color:nth($colores, 2);
+                font-size: 30px;
+                font-style: italic;
+                margin-bottom: 20px;
+                margin: 20px;
+                text-shadow: 3px 3px nth($colores, 4);
+            }
+        }
+
+        div {           
+            a {
+                margin-right: 20px;
+                width: 80px;
+                height: 80px;
+
+                img {
+                    margin-right: 20px;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+/*!.........Whatsapp..............*/
+
+.whatsappindex {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+
+    a {
+        img {
+            width: 50px;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

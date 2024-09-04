@@ -1,0 +1,20 @@
+//*VARIABLES
+
+$colores: skyblue, white, aliceblue, black, yellow, blue, aqua, grey;
+$font: 10px, 20px, 30px, 40px, 50px, 60px, 70px, 80px;
+
+//*EXTENDS
+
+%enlaces{
+    text-decoration:none;
+}
+
+//*MIXIN
+
+@mixin flexbox($flex, $justify, $align, $direction){
+        display: $flex;
+        justify-content: $justify;
+        align-items: $align;
+        flex-direction: $direction;
+}
+
