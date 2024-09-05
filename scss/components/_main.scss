@@ -118,10 +118,8 @@ iframe {
     @include flexbox(flex, space-around, center, row-reverse);
     
     div{
-        display: flex;
-        flex-direction: column;
         text-align: center;
-        margin: 10px;
+        margin: 15px;
         h1{
             @extend %enlaces;
             font-size: 50px;
@@ -129,7 +127,8 @@ iframe {
         }
         p{
             @extend %enlaces;
-            font-size: 20px;
+            font-size: 15px;
+            text-align:left;
         }
 
     }
