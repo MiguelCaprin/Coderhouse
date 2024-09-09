@@ -37,15 +37,17 @@ header {
     font-size: 30px;
     text-shadow: 1px 1px skyblue;
 }
-.d-block{
+
+.d-block {
     height: 80vh;
     border-radius: 30px;
     border: solid 10px black;
     margin: auto;
-    padding: 10px; 
+    padding: 10px;
     background-color: skyblue;
-   
+
 }
+
 /* !------------------------------------MAIN----------------------------------- */
 
 .viajemosindex {
@@ -91,6 +93,7 @@ iframe {
     height: 500px;
     border: 5px solid blue;
 }
+
 .paquetesindex h2 {
     text-align: center;
     font-size: 70px;
@@ -99,6 +102,7 @@ iframe {
     text-shadow: 3px 3px black;
 
 }
+
 .paquetesindex div {
     display: flex;
     justify-content: space-between;
@@ -541,7 +545,7 @@ footer a img:hover {
     margin: 10px;
     display: flex;
     justify-content: space-around;
-    align-items: center;  
+    align-items: center;
     flex-direction: row-reverse;
 }
 
@@ -575,4 +579,66 @@ footer a img:hover {
         width: 100%;
         height: 100%;
     }
+}
+
+/* ------------------------------------------- Pagina Asistencia al viajero ------------------------------------------- */
+/* !------------------------------------MAIN----------------------------------- */
+.asistencia {
+    text-align: center;
+}
+
+.asistencia h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    text-shadow: 1px 1px skyblue;
+}
+
+.asistencia p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+}
+
+
+
+.formularioasistencia {
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.mb-3 {
+    width: 50%;
+}
+
+#inputPassword5 {
+    width: 50%
+}
+
+.form-text {
+    width: 50%;
+}
+
+
+
+.asistencia {
+    margin: 50px;
+
+}
+
+.asistencia h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.asistencia p {
+    font-size: 25px;
+
+}
+
+.asistencia span {
+    color: blue;
+
 }
