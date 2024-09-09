@@ -10,6 +10,7 @@
 body {
     font-family: "Lato", sans-serif;
 }
+
 /*!.......HEADER BOOTSTRAP.............*/
 header {
     position: sticky;
@@ -28,7 +29,7 @@ header {
 
 .collapse .navbar-nav .nav-item .nav-link {
     font-size: 30px;
-    color: white !important;
+    color: nth($colores, $n:2) !important;
     text-shadow: 1px 1px nth($colores, 4);
 }
 
@@ -36,6 +37,60 @@ header {
     font-size: 30px;
     text-shadow: 1px 1px nth($colores, 1);
 }
+
+/* ------------------------------------------- Pagina Asistencia al viajero ------------------------------------------- */
+/* !------------------------------------MAIN Bootstrap----------------------------------- */
+.asistencia {
+    text-align: center;
+    margin: 50px;
+}
+
+.asistencia h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    text-shadow: 1px 1px nth($colores, $n:1);
+    text-align: center;
+}
+
+.asistencia p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+}
+
+.asistencia span {
+    color: nth($colores, $n:6);
+}
+
+.formularioasistencia {
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mb-3 {
+    width: 50%;
+}
+
+#inputPassword5 {
+    width: 50%;
+}
+
+.form-text {
+    width: 50%;
+}
+
+/*...................Bootstrap Carousel pagina Autobus/Aereos..........................*/
+.d-block {
+    height: 80vh;
+    border-radius: 30px;
+    border: solid 10px nth($colores, $n:4);
+    margin: auto;
+    padding: 10px;
+    background-color:nth($colores, $n:1);
+}
+
 /*!............FOOTER.......................*/
 footer {
     background-color: nth($colores, 1);
@@ -43,9 +98,10 @@ footer {
 
     div {
         @include flexbox(flex, space-around, center, row);
+
         div {
             h4 {
-                color:nth($colores, 2);
+                color: nth($colores, 2);
                 font-size: 30px;
                 font-style: italic;
                 margin-bottom: 20px;
@@ -54,7 +110,7 @@ footer {
             }
         }
 
-        div {           
+        div {
             a {
                 margin-right: 20px;
                 width: 80px;

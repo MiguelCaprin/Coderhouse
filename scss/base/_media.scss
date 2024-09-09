@@ -4,7 +4,7 @@
 
     footer div div h4 {
         font-size: 20px;
-        text-shadow: 1px 1px white;
+        text-shadow: 1px 1px nth($colores, $n:2);
     }
 }
 
@@ -18,11 +18,12 @@
         margin-right: 20px;
     }
 }
+
 /*!........Pagina Mediaquery INDEX..............*/
 @media screen and (max-width:720px) {
     .paquetesindex h2 {
         font-size: 30px;
-        text-shadow: 1px 1px skyblue;
+        text-shadow: 1px 1px nth($colores, $n:1);
     }
 
     .paquetesindex div {
@@ -53,6 +54,7 @@
         font-size: 50px;
     }
 }
+
 /*!........Pagina Mediaquery QUIENES SOMOS..............*/
 @media screen and (max-width:1070px) {
     .quienessomos {
@@ -64,4 +66,25 @@
         width: 100%;
         height: 100%;
     }
+}
+
+/*!........Pagina Mediaquery HOTELES..............*/
+
+@media screen and (max-width:559px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+        grid-auto-rows: repeat(4, auto);
+        gap: 5px 5px;
+        grid-template-areas:
+            "bariloche"
+            "cordoba"
+            "corrientes"
+            "salta"
+            "larioja"
+            "mendoza"
+            "sanluis"
+            "ushuaia"
+            "misiones"
+    }
+
 }

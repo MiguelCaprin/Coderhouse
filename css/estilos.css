@@ -1,102 +1,116 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
-.viajemosindex h2,
-.viajemosindex p,
-.paquetesindex h2,
-.paquetesindex div div h3,
-.quienessomos div h1,
-.quienessomos div p {
-  text-decoration: none;
-}
+.viajemosindex h2, .viajemosindex p, .paquetesindex h2, .paquetesindex div div h3, .quienessomos div h1, .quienessomos div p {
+  text-decoration: none; }
 
 /*?............GENERALES.............*/
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
-  font-family: "Lato", sans-serif;
-}
+  font-family: "Lato", sans-serif; }
 
 /*!.......HEADER BOOTSTRAP.............*/
 header {
   position: sticky;
-  top: 0;
-}
+  top: 0; }
 
 .logoargentravel {
   width: 150px;
   height: 150px;
-  border-radius: 10px;
-}
+  border-radius: 10px; }
 
 .nav-background {
-  background-color: skyblue;
-}
+  background-color: skyblue; }
 
 .collapse .navbar-nav .nav-item .nav-link {
   font-size: 30px;
   color: white !important;
-  text-shadow: 1px 1px black;
-}
+  text-shadow: 1px 1px black; }
 
 .dropdown-item {
   font-size: 30px;
+  text-shadow: 1px 1px skyblue; }
+
+/* ------------------------------------------- Pagina Asistencia al viajero ------------------------------------------- */
+/* !------------------------------------MAIN Bootstrap----------------------------------- */
+.asistencia {
+  text-align: center;
+  margin: 50px; }
+
+.asistencia h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 50px;
   text-shadow: 1px 1px skyblue;
-}
+  text-align: center; }
+
+.asistencia p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 25px; }
+
+.asistencia span {
+  color: blue; }
+
+.formularioasistencia {
+  margin: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.mb-3 {
+  width: 50%; }
+
+#inputPassword5 {
+  width: 50%; }
+
+.form-text {
+  width: 50%; }
+
+/*...................Bootstrap Carousel pagina Autobus/Aereos..........................*/
+.d-block {
+  height: 80vh;
+  border-radius: 30px;
+  border: solid 10px black;
+  margin: auto;
+  padding: 10px;
+  background-color: skyblue; }
 
 /*!............FOOTER.......................*/
 footer {
   background-color: skyblue;
-  padding: 20px;
-}
-
-footer div {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-}
-
-footer div div h4 {
-  color: white;
-  font-size: 30px;
-  font-style: italic;
-  margin-bottom: 20px;
-  margin: 20px;
-  text-shadow: 3px 3px black;
-}
-
-footer div div a {
-  margin-right: 20px;
-  width: 80px;
-  height: 80px;
-}
-
-footer div div a img {
-  margin-right: 20px;
-}
-
-footer div div a img:hover {
-  transform: scale(1.1);
-}
+  padding: 20px; }
+  footer div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row; }
+    footer div div h4 {
+      color: white;
+      font-size: 30px;
+      font-style: italic;
+      margin-bottom: 20px;
+      margin: 20px;
+      text-shadow: 3px 3px black; }
+    footer div div a {
+      margin-right: 20px;
+      width: 80px;
+      height: 80px; }
+      footer div div a img {
+        margin-right: 20px; }
+        footer div div a img:hover {
+          transform: scale(1.1); }
 
 /*!.........Whatsapp..............*/
 .whatsappindex {
   position: fixed;
   bottom: 40px;
-  right: 40px;
-}
-
-.whatsappindex a img {
-  width: 50px;
-}
-
-.whatsappindex a img:hover {
-  transform: scale(1.1);
-}
+  right: 40px; }
+  .whatsappindex a img {
+    width: 50px; }
+    .whatsappindex a img:hover {
+      transform: scale(1.1); }
 
 /*?..........MAIN..........*/
 /*!.................Pagina Main INDEX..................*/
@@ -111,95 +125,73 @@ footer div div a img:hover {
   background-position: center;
   background-attachment: fixed;
   color: aliceblue;
-  padding: 30px;
-}
-
-.viajemosindex h2 {
-  font-size: 400%;
-  text-shadow: 3px 3px black;
-}
-
-.viajemosindex p {
-  font-size: 200%;
-  margin-bottom: 20px;
-  color: white;
-}
-
-.viajemosindex a {
-  padding: 10px;
-  font-size: 200%;
-  text-decoration: none;
-  color: white;
-  border: 5px solid blue;
-  border-radius: 20px;
-  background-color: skyblue;
-}
-
-.viajemosindex a:hover {
-  background-color: yellow;
-}
+  padding: 30px; }
+  .viajemosindex h2 {
+    font-size: 400%;
+    text-shadow: 3px 3px black; }
+  .viajemosindex p {
+    font-size: 200%;
+    margin-bottom: 20px;
+    color: white; }
+  .viajemosindex a {
+    padding: 10px;
+    font-size: 200%;
+    text-decoration: none;
+    color: white;
+    border: 5px solid blue;
+    border-radius: 20px;
+    background-color: skyblue; }
+    .viajemosindex a:hover {
+      background-color: yellow; }
 
 iframe {
   width: 100%;
   height: 500px;
-  border: 5px solid blue;
-}
+  border: 5px solid blue; }
 
 .paquetesindex h2 {
   text-align: center;
   font-size: 70px;
   padding: 10px;
   color: blue;
-  text-shadow: 3px 3px black;
-}
+  text-shadow: 3px 3px black; }
 
 .paquetesindex div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row;
-}
-
-.paquetesindex div div {
-  width: 300px;
-  height: 350px;
-  border: 3px solid blue;
-  margin: 20px;
-  text-align: center;
-  display: inline-block;
-}
-
-.paquetesindex div div img {
-  width: 100%;
-  height: 60%;
-  padding: 5px;
-  margin-bottom: 20px;
-}
-
-.paquetesindex div div h3 {
-  font-size: 30px;
-  margin-bottom: 25px;
-}
-
-.paquetesindex div div a {
-  font-size: 20px;
-  border: none;
-  background-color: blue;
-  text-decoration: none;
-  color: aliceblue;
-  padding: 8px;
-  border-radius: 30px;
-  background: skyblue;
-  box-shadow: 0 0 5px skyblue, 0 0 25px skyblue;
-  transition: all 0.4s ease;
-  cursor: pointer;
-}
-
-.paquetesindex div div a:hover {
-  background-color: blue;
-  transform: scale(1.1);
-  box-shadow: 0 0 5px skyblue, 0 0 25px skyblue, 0 0 50px skyblue, 0 0 100px skyblue;
-}
+  flex-direction: row; }
+  .paquetesindex div div {
+    width: 300px;
+    height: 350px;
+    border: 3px solid blue;
+    margin: 20px;
+    text-align: center;
+    display: inline-block; }
+    .paquetesindex div div img {
+      width: 100%;
+      height: 60%;
+      padding: 5px;
+      margin-bottom: 20px; }
+    .paquetesindex div div h3 {
+      font-size: 30px;
+      margin-bottom: 25px; }
+    .paquetesindex div div a {
+      font-size: 20px;
+      border: none;
+      background-color: blue;
+      text-decoration: none;
+      color: aliceblue;
+      padding: 8px;
+      border-radius: 30px;
+      background: skyblue;
+      box-shadow: 0 0 5px skyblue, 0 0 25px skyblue;
+      transition: all 0.4s ease;
+      cursor: pointer; }
+      .paquetesindex div div a:hover {
+        background-color: blue;
+        transform: scale(1.1);
+        box-shadow: 0 0 5px skyblue, 0 0 25px skyblue, 0 0 50px skyblue, 0 0 100px skyblue; }
 
 /*!.................Pagina Main QUIENES SOMOS..................*/
 .quienessomos {
@@ -207,94 +199,166 @@ iframe {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-direction: row-reverse;
-}
+  flex-direction: row-reverse; }
+  .quienessomos div {
+    text-align: center;
+    margin: 15px; }
+    .quienessomos div h1 {
+      font-size: 50px;
+      text-shadow: 2px 2px skyblue; }
+    .quienessomos div p {
+      font-size: 15px;
+      text-align: left; }
+  .quienessomos img {
+    border-radius: 8px;
+    box-shadow: 0 0 30px black; }
 
-.quienessomos div {
-  text-align: center;
-  margin: 15px;
-}
-
-.quienessomos div h1 {
-  font-size: 50px;
-  text-shadow: 2px 2px skyblue;
-}
-
-.quienessomos div p {
-  font-size: 15px;
-  text-align: left;
-}
-
-.quienessomos img {
-  border-radius: 8px;
-  box-shadow: 0 0 30px black;
-}
+/* ------------------------------------------- Pagina Hoteles-------------------------------------------- */
+/* !------------------------------------MAIN----------------------------------- */
+.contenedor {
+  margin: 10px;
+  display: grid;
+  width: 97%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 300px 300px 300px;
+  gap: 5px 5px;
+  grid-template-areas: "bariloche bariloche cordoba" "bariloche bariloche corrientes" "salta larioja mendoza" "salta sanluis sanluis" "ushuaia ushuaia misiones"; }
+  .contenedor div {
+    background-color: gray;
+    border: solid 4px aqua;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column; }
+    .contenedor div:hover {
+      transform: scale(0.9); }
+    .contenedor div h1 {
+      background-color: black;
+      color: white;
+      width: 100%;
+      margin-top: 0;
+      font-size: 30px; }
+    .contenedor div button {
+      font-size: 20px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: white;
+      text-shadow: 1px 1px black;
+      padding: 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 30px;
+      background: skyblue;
+      box-shadow: 0 0 5px skyblue, 0 0 25px skyblue;
+      transition: all 0.4s ease;
+      cursor: pointer; }
+      .contenedor div button:hover {
+        box-shadow: 0 0 5px skyblue, 0 0 25px skyblue, 0 0 50px skyblue, 0 0 100px skyblue; }
+  .contenedor .hotelbariloche {
+    grid-area: bariloche;
+    background-image: url(../img/hotelbariloche.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .contenedor .hotelcordoba {
+    grid-area: cordoba;
+    background-image: url(../img/hotelcorboba.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .contenedor .hotelcorrientes {
+    grid-area: corrientes;
+    background-image: url(../img/hotelcorrientes.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .contenedor .hotelsalta {
+    grid-area: salta;
+    background-image: url(../img/hotelsalta.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .contenedor .hotellarioja {
+    grid-area: larioja;
+    background-image: url(../img/hotellarioja.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .contenedor .hotelmendoza {
+    grid-area: mendoza;
+    background-image: url(../img/hotelmendoza.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .contenedor .hotelsanluis {
+    grid-area: sanluis;
+    background-image: url(../img/hotelsanluis.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .contenedor .hotelushuaia {
+    grid-area: ushuaia;
+    background-image: url(../img/hotelushuaia.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .contenedor .hotelmisiones {
+    grid-area: misiones;
+    background-image: url(../img/hotelmisiones.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
 
 /*?............MEDIAQUERY............*/
 /*!........Footer Mediaquery..............*/
 @media screen and (max-width: 1005px) {
   footer div div h4 {
     font-size: 20px;
-    text-shadow: 1px 1px white;
-  }
-}
+    text-shadow: 1px 1px white; } }
 
 @media screen and (max-width: 865px) {
   footer div h4 {
-    display: none;
-  }
-
+    display: none; }
   footer div div a img {
     display: inline-block;
-    margin-right: 20px;
-  }
-}
+    margin-right: 20px; } }
 
 /*!........Pagina Mediaquery INDEX..............*/
 @media screen and (max-width: 720px) {
   .paquetesindex h2 {
     font-size: 30px;
-    text-shadow: 1px 1px skyblue;
-  }
-
+    text-shadow: 1px 1px skyblue; }
   .paquetesindex div {
-    flex-direction: column;
-  }
-}
+    flex-direction: column; } }
 
 @media screen and (max-width: 690px) {
   .viajemosindex a {
-    display: none;
-  }
-
+    display: none; }
   .viajemosindex p {
-    display: none;
-  }
-}
+    display: none; } }
 
 @media screen and (max-width: 457px) {
   .whatsappindex {
-    left: 40px;
-  }
-}
+    left: 40px; } }
 
 @media screen and (max-width: 360px) {
   .viajemosindex h2 {
-    font-size: 50px;
-  }
-}
+    font-size: 50px; } }
 
 /*!........Pagina Mediaquery QUIENES SOMOS..............*/
 @media screen and (max-width: 1070px) {
   .quienessomos {
     display: flex;
-    flex-direction: column-reverse;
-  }
-
+    flex-direction: column-reverse; }
   .quienessomos img {
     width: 100%;
-    height: 100%;
-  }
-}
+    height: 100%; } }
 
-
+/*!........Pagina Mediaquery HOTELES..............*/
+@media screen and (max-width: 559px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+    grid-auto-rows: repeat(4, auto);
+    gap: 5px 5px;
+    grid-template-areas: "bariloche" "cordoba" "corrientes" "salta" "larioja" "mendoza" "sanluis" "ushuaia" "misiones"; } }

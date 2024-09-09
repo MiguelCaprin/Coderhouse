@@ -50,7 +50,7 @@ iframe {
 }
 
 .paquetesindex {
-    
+
     h2 {
         @extend %enlaces;
         text-align: center;
@@ -62,7 +62,7 @@ iframe {
 
     div {
         @include flexbox(flex, space-between, center, row);
-        
+
         div {
             width: 300px;
             height: 350px;
@@ -94,8 +94,8 @@ iframe {
 
                 border-radius: 30px;
                 background: nth($colores, 1);
-                box-shadow: 0 0 5px  nth($colores, 1),
-                            0 0 25px nth($colores, 1);
+                box-shadow: 0 0 5px nth($colores, 1),
+                    0 0 25px nth($colores, 1);
                 transition: all 0.4s ease;
                 cursor: pointer;
 
@@ -103,37 +103,183 @@ iframe {
                     background-color: nth($colores, 6);
                     transform: scale(1.1);
                     box-shadow: 0 0 5px nth($colores, 1),
-                                0 0 25px nth($colores, 1),
-                                0 0 50px nth($colores, 1),
-                                0 0 100px nth($colores, 1);
+                        0 0 25px nth($colores, 1),
+                        0 0 50px nth($colores, 1),
+                        0 0 100px nth($colores, 1);
 
                 }
             }
         }
     }
 }
+
 /*!.................Pagina Main QUIENES SOMOS..................*/
-.quienessomos{
+.quienessomos {
     margin: 10px;
     @include flexbox(flex, space-around, center, row-reverse);
-    
-    div{
+
+    div {
         text-align: center;
         margin: 15px;
-        h1{
+
+        h1 {
             @extend %enlaces;
             font-size: 50px;
             text-shadow: 2px 2px nth($colores, 1);
         }
-        p{
+
+        p {
             @extend %enlaces;
             font-size: 15px;
-            text-align:left;
+            text-align: left;
         }
 
     }
-    img{
+
+    img {
         border-radius: 8px;
         box-shadow: 0 0 30px nth($colores, 4);
+    }
+}
+
+/* ------------------------------------------- Pagina Hoteles-------------------------------------------- */
+/* !------------------------------------MAIN----------------------------------- */
+
+.contenedor {
+    margin: 10px;
+    display: grid;
+    width: 97%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px 300px 300px;
+    gap: 5px 5px;
+    grid-template-areas:
+        "bariloche bariloche cordoba"
+        "bariloche bariloche corrientes"
+        "salta larioja mendoza"
+        "salta sanluis sanluis"
+        "ushuaia ushuaia misiones";
+
+    div {
+        background-color: gray;
+        border: solid 4px nth($colores, $n:7);
+        border-radius: 10px;
+        text-align: center;
+        @include flexbox(flex, space-between, center, column);
+
+        &:hover {
+            transform: scale(0.9);
+        }
+
+        h1 {
+            background-color: nth($colores, $n:4);
+            color: nth($colores, $n:2);
+            width: 100%;
+            margin-top: 0;
+            font-size: 30px;
+        }
+
+        button {
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: nth($colores, $n:2);
+            text-shadow: 1px 1px nth($colores, $n:4);
+            padding: 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 30px;
+            background: skyblue;
+            box-shadow: 0 0 5px skyblue,
+                        0 0 25px skyblue;
+            transition: all 0.4s ease;
+            cursor: pointer;
+            &:hover {
+                box-shadow: 0 0 5px skyblue,
+                            0 0 25px skyblue,
+                            0 0 50px skyblue,
+                            0 0 100px skyblue;
+            }
+        }
+
+        
+    }
+
+    .hotelbariloche {
+        grid-area: bariloche;
+        background-image: url(../img/hotelbariloche.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .hotelcordoba {
+        grid-area: cordoba;
+        background-image: url(../img/hotelcorboba.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .hotelcorrientes {
+        grid-area: corrientes;
+        background-image: url(../img/hotelcorrientes.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .hotelsalta {
+        grid-area: salta;
+        background-image: url(../img/hotelsalta.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .hotellarioja {
+        grid-area: larioja;
+        background-image: url(../img/hotellarioja.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .hotelmendoza {
+        grid-area: mendoza;
+        background-image: url(../img/hotelmendoza.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .hotelsanluis {
+        grid-area: sanluis;
+        background-image: url(../img/hotelsanluis.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .hotelushuaia {
+        grid-area: ushuaia;
+        background-image: url(../img/hotelushuaia.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .hotelmisiones {
+        grid-area: misiones;
+        background-image: url(../img/hotelmisiones.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
