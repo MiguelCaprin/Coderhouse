@@ -37,7 +37,15 @@ header {
     font-size: 30px;
     text-shadow: 1px 1px skyblue;
 }
-
+.d-block{
+    height: 80vh;
+    border-radius: 30px;
+    border: solid 10px black;
+    margin: auto;
+    padding: 10px; 
+    background-color: skyblue;
+   
+}
 /* !------------------------------------MAIN----------------------------------- */
 
 .viajemosindex {
