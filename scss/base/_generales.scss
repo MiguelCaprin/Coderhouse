@@ -14,28 +14,30 @@ body {
 /*!.......HEADER BOOTSTRAP.............*/
 header {
     position: sticky;
+    margin-bottom: 15px;
     top: 0;
-}
 
-.logoargentravel {
-    width: 150px;
-    height: 150px;
-    border-radius: 10px;
-}
 
-.nav-background {
-    background-color: nth($colores, 1);
-}
+    .logoargentravel {
+        width: 150px;
+        height: 150px;
+        border-radius: 10px;
+    }
 
-.collapse .navbar-nav .nav-item .nav-link {
-    font-size: 30px;
-    color: nth($colores, $n:2) !important;
-    text-shadow: 1px 1px nth($colores, 4);
-}
+    .nav-background {
+        background-color: nth($colores, 1);
+    }
 
-.dropdown-item {
-    font-size: 30px;
-    text-shadow: 1px 1px nth($colores, 1);
+    .collapse .navbar-nav .nav-item .nav-link {
+        font-size: 30px;
+        color: nth($colores, $n: 2) !important;
+        text-shadow: 1px 1px nth($colores, 4);
+    }
+
+    .dropdown-item {
+        font-size: 30px;
+        text-shadow: 1px 1px nth($colores, 1);
+    }
 }
 
 /* ------------------------------------------- Pagina Asistencia al viajero ------------------------------------------- */
@@ -43,22 +45,23 @@ header {
 .asistencia {
     text-align: center;
     margin: 50px;
-}
 
-.asistencia h1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 50px;
-    text-shadow: 1px 1px nth($colores, $n:1);
-    text-align: center;
-}
 
-.asistencia p {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 25px;
-}
+    h1 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 50px;
+        text-shadow: 1px 1px nth($colores, $n: 1);
+        text-align: center;
+    }
 
-.asistencia span {
-    color: nth($colores, $n:6);
+    p {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 25px;
+    }
+
+    span {
+        color: nth($colores, $n: 6);
+    }
 }
 
 .formularioasistencia {
@@ -67,29 +70,34 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+
+    .mb-3 {
+        width: 50%;
+    }
+
+    #inputPassword5 {
+        width: 50%;
+    }
+
+    .form-text {
+        width: 50%;
+    }
 }
 
-.mb-3 {
-    width: 50%;
-}
-
-#inputPassword5 {
-    width: 50%;
-}
-
-.form-text {
-    width: 50%;
-}
 
 /*...................Bootstrap Carousel pagina Autobus/Aereos..........................*/
 .d-block {
     height: 80vh;
     border-radius: 30px;
-    border: solid 10px nth($colores, $n:4);
+    border: solid 10px nth($colores, $n: 4);
     margin: auto;
     padding: 10px;
-    background-color:nth($colores, $n:1);
+    background-color: nth($colores, $n: 1);
+
 }
+
+
 
 /*!............FOOTER.......................*/
 footer {

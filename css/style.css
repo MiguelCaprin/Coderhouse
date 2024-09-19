@@ -38,7 +38,7 @@ header {
     text-shadow: 1px 1px skyblue;
 }
 /*...................Bootstrap Carousel pagina Autobus/Aereos..........................*/
-.d-block {
+ .d-block {
     height: 80vh;
     border-radius: 30px;
     border: solid 10px black;
